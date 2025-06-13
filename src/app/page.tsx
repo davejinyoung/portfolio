@@ -26,7 +26,7 @@ export default function Home() {
           <div className="pl-4">
             <div className="text-4xl mb-4 text-white">Dave Jung</div>
             <div className="mt-4 text-sm">
-              I'm a 4th year Software Engineering student at the University of
+              I&apos;m a 4th year Software Engineering student at the University of
               Victoria and I seek to innovate at the bleeding edge of
               technology.
               <br />

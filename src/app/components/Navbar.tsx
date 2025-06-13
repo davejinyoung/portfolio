@@ -1,11 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useTheme } from "next-themes";
 
 export default function Navbar() {
-  const { theme, setTheme } = useTheme();
-
   return (
     <header className="fixed top-0 w-full z-10 bg-gradient-to-b from-gray-900 to-transparent">
       <nav className="max-w-2xl mx-auto px-4 py-4 flex justify-between items-center">

@@ -1,5 +1,16 @@
 "use client";
 
+type Star = {
+  x: number;
+  y: number;
+  size: number;
+  speedX: number;
+  speedY: number;
+  brightness: number;
+  twinkleSpeed: number;
+  twinkleOffset: number;
+};
+
 import { useEffect, useRef } from "react";
 
 export default function ConstellationsBackground() {
@@ -24,7 +35,7 @@ export default function ConstellationsBackground() {
       twinkleOffset: Math.random() * Math.PI * 2,
     }));
 
-    function drawStar(star: any, time: number) {
+    function drawStar(star: Star, time: number) {
       // Calculate twinkling effect
       const twinkle = Math.sin(time * star.twinkleSpeed + star.twinkleOffset) * 0.2 + 0.8;
       const brightness = star.brightness * twinkle;
@@ -49,7 +60,7 @@ export default function ConstellationsBackground() {
       ctx.fill();
     }
 
-    function drawConnection(star1: any, star2: any) {
+    function drawConnection(star1: Star, star2: Star) {
       const dx = star2.x - star1.x;
       const dy = star2.y - star1.y;
       const distance = Math.sqrt(dx * dx + dy * dy);

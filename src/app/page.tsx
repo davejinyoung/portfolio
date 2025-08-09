@@ -69,9 +69,9 @@ export default function Home() {
           <Command command="ls -la PROJECTS | awk '{print $7, $6}" />
           <div className="grid gap-4 pl-4">
             <ProjectCard
-              title="Morning Flow"
-              description="Custom anti-snooze wake-up routine mobile iOS app"
-              link="https://github.com/davejinyoung/morning-flow"
+              title="AI Tetris Agent"
+              description="An AI agent that plays Tetris better than any human"
+              link="https://github.com/davejinyoung/ai-tetris"
             />
             <ProjectCard
               title="Pigeon Post"

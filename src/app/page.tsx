@@ -26,8 +26,8 @@ export default function Home() {
           <div className="pl-4">
             <div className="text-4xl mb-4 text-white">Dave Jung</div>
             <div className="mt-4 text-sm">
-              I&apos;m a 4th year Software Engineering student at the University of
-              Victoria and I seek to innovate at the bleeding edge of
+              I&apos;m a 4th year Software Engineering student at the University
+              of Victoria and I seek to innovate at the bleeding edge of
               technology.
               <br />
               <br />
@@ -45,15 +45,21 @@ export default function Home() {
           <Command command="ls -la WORK | awk '{print $7, $6}" />
           <div className="grid gap-4 pl-4">
             <Work
+              company="D-Wave Quantum"
+              dateRange="Sept 2025 - Present"
+              position="Software Development Engineer In-Test Co-op"
+              link="https://www.dwavequantum.com/"
+            />
+            <Work
               company="Copperleaf Technologies"
               dateRange="Jan 2024 - Aug 2024"
               position="Software Developer Co-op"
               link="https://www.copperleaf.com/"
             />
             <Work
-              company="D-Wave Systems"
+              company="D-Wave Quantum"
               dateRange="Jan 2023 - Apr 2023"
-              position="Software Engineer In-Test Co-op"
+              position="Software Development Engineer In-Test Co-op"
               link="https://www.dwavequantum.com/"
             />
             <Work
@@ -68,6 +74,16 @@ export default function Home() {
         <section id="projects" className="pb-20">
           <Command command="ls -la PROJECTS | awk '{print $7, $6}" />
           <div className="grid gap-4 pl-4">
+            <ProjectCard
+              title="MacOS Desktop App Switcher"
+              description="Lets MacOS users switch between apps only on their current desktop (Currently under development)"
+              link=""
+            />
+            <ProjectCard
+              title="High-Performance Matrix Inverter"
+              description="A high-performance matrix inversion algorithm implemented in C"
+              link="https://github.com/davejinyoung/seng440-matrix-inversion"
+            />
             <ProjectCard
               title="AI Tetris Agent"
               description="An AI agent that plays Tetris better than any human"

@@ -18,7 +18,7 @@ export default function Home() {
                 bg-[radial-gradient(ellipse_40%_100%_at_center,_rgba(0,255,0,0.03)_0%,_transparent_70%)]
                 blur-3xl"
         />
-        <section id="about" className="pt-25 pb-20 dark:text-neutral-400">
+        <section id="about" className="pt-25 dark:text-neutral-400">
           <div className="text-sm opacity-60 mb-10">
             Last login: {new Date().toLocaleDateString()} on ttys000
           </div>
@@ -41,7 +41,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="work" className="pb-20">
+        <section id="work" className="pt-20">
           <Command command="ls -la WORK | awk '{print $7, $6}" />
           <div className="grid gap-4 pl-4">
             <Work
@@ -71,7 +71,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projects" className="pb-20">
+        <section id="projects" className="pt-20">
           <Command command="ls -la PROJECTS | awk '{print $7, $6}" />
           <div className="grid gap-4 pl-4">
             <ProjectCard
@@ -102,7 +102,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="pb-20">
+        <section id="contact" className="pt-20">
           <Command command="echo $CONTACT" />
           <div className="mb-20 pl-4">
             <p className="text-gray-300">

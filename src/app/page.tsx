@@ -77,7 +77,7 @@ export default function Home() {
             <ProjectCard
               title="MacOS Desktop App Switcher"
               description="Lets MacOS users switch between apps only on their current desktop (Currently under development)"
-              link=""
+              link="https://github.com/davejinyoung/mac-desktop-app-swicher"
             />
             <ProjectCard
               title="High-Performance Matrix Inverter"

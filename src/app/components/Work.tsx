@@ -7,11 +7,11 @@ interface Props {
 
 export default function Work({ company, dateRange, position, link }: Props) {
   return (
-    <div className="block p-3 backdrop-blur-xs border border-gray-600 dark:text-neutral-400 rounded-sm hover:shadow-md transition">
+    <div className="block p-3 backdrop-blur-xs border border-gray-600 dark:text-neutral-300 rounded-sm hover:shadow-md transition">
       <div className="flex justify-between items-center text-sm">
         <div className="w-full">
           <div className="flex justify-between items-center w-full">
-            <h3 className="text-white">{company}</h3>
+            <h3 className="text-white font-semibold">{company}</h3>
             <p className="ml-5">{dateRange}</p>
           </div>
           <p>{position}</p>

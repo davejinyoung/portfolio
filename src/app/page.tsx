@@ -2,7 +2,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProjectCard from "./components/ProjectCard";
 import Work from "./components/Work";
-import ConstellationsBackground from "./components/ConstellationsBackground";
 import BlinkingCursor from "./components/BlinkingCursor";
 import Command from "./components/Command";
 
@@ -10,13 +9,11 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <ConstellationsBackground />
       <main className="max-w-2xl mx-auto px-4 scroll-smooth text-green-400 font-mono">
         <div
           aria-hidden
-          className="absolute inset-0 z-[-1] fixed pointer-events-none
-                bg-[radial-gradient(ellipse_40%_100%_at_center,_rgba(0,255,0,0.03)_0%,_transparent_70%)]
-                blur-3xl"
+          className="fixed inset-0 z-[-1] pointer-events-none
+                    bg-[rgb(32,32,32)]"
         />
         <section id="about" className="pt-25 dark:text-neutral-400">
           <div className="text-sm opacity-60 mb-10">
@@ -25,10 +22,9 @@ export default function Home() {
           <Command command="whoami && cat about.txt" />
           <div className="pl-4">
             <div className="text-4xl mb-4 text-white">Dave Jung</div>
-            <div className="mt-4 text-sm">
-              I&apos;m a 4th year Software Engineering student at the University
-              of Victoria and I seek to innovate at the bleeding edge of
-              technology.
+            <div className="mt-4 text-sm text-neutral-300 leading-relaxed">
+              I’m a fourth-year Software Engineering student at the University of Victoria, 
+              building across everything from full-stack development to quantum computing and machine learning.
               <br />
               <br />
               I approach building with a naive assumption that all ideas are
@@ -46,7 +42,7 @@ export default function Home() {
           <div className="grid gap-4 pl-4">
             <Work
               company="D-Wave Quantum"
-              dateRange="Sept 2025 - Present"
+              dateRange="Sept 2025 - Dec 2025"
               position="Software Development Engineer In-Test Co-op"
               link="https://www.dwavequantum.com/"
             />
@@ -76,28 +72,28 @@ export default function Home() {
           <div className="grid gap-4 pl-4">
             <ProjectCard
               title="MacOS Desktop App Switcher"
-              description="Lets MacOS users switch between apps only on their current desktop (Currently under development)"
+              description="Lets MacOS users customize switching between apps"
               link="https://github.com/davejinyoung/mac-desktop-app-swicher"
+            />
+            <ProjectCard
+              title="Pigeon Post"
+              description="Full stack Gmail inbox AI summarizer web app"
+              link="https://github.com/davejinyoung/pigeon-post"
+            />
+            <ProjectCard
+              title="Looper"
+              description="Full stack custom biking and running route auto-generator web app"
+              link="https://github.com/davejinyoung/Looper"
+            />
+            <ProjectCard
+              title="AI Tetris Agent"
+              description="Uses a genetic algorithm to play Tetris better than any human"
+              link="https://github.com/davejinyoung/ai-tetris"
             />
             <ProjectCard
               title="High-Performance Matrix Inverter"
               description="A high-performance matrix inversion algorithm implemented in C"
               link="https://github.com/davejinyoung/seng440-matrix-inversion"
-            />
-            <ProjectCard
-              title="AI Tetris Agent"
-              description="An AI agent that plays Tetris better than any human"
-              link="https://github.com/davejinyoung/ai-tetris"
-            />
-            <ProjectCard
-              title="Pigeon Post"
-              description="Gmail inbox AI summarizer web app"
-              link="https://github.com/davejinyoung/pigeon-post"
-            />
-            <ProjectCard
-              title="Looper"
-              description="Custom biking and running route auto-generator web app"
-              link="https://github.com/davejinyoung/Looper"
             />
           </div>
         </section>
@@ -112,6 +108,13 @@ export default function Home() {
                 href="mailto:davejinyoung@gmail.com"
               >
                 davejinyoung@gmail.com
+              </a>
+              {" and "}
+              <a
+                className="underline text-blue-400 hover:text-blue-300"
+                href="https://www.linkedin.com/in/davejinyoungjung/"
+              >
+                LinkedIn
               </a>
             </p>
           </div>

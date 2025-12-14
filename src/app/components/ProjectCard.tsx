@@ -6,10 +6,10 @@ interface Props {
 
 export default function ProjectCard({ title, description, link }: Props) {
   return (
-    <div className="block p-3 text-sm backdrop-blur-xs border border-gray-600 dark:text-neutral-400 rounded-sm hover:shadow-md transition">
+    <div className="block p-3 text-sm backdrop-blur-xs border border-gray-600 dark:text-neutral-300 rounded-sm hover:shadow-md transition">
       <div className="flex justify-between items-center">
         <div>
-          <h3 className="text-white">{title}</h3>
+          <h3 className="text-white font-semibold">{title}</h3>
           <p>{description}</p>
         </div>
         <a

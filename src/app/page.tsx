@@ -43,7 +43,7 @@ export default function Home() {
             <Work
               company="D-Wave Quantum"
               dateRange="Sept 2025 - Dec 2025"
-              position="Software Development Engineer In-Test Co-op"
+              position="Platform Engineer Co-op"
               link="https://www.dwavequantum.com/"
             />
             <Work
